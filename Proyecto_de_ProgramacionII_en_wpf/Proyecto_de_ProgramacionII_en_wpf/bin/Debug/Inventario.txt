@@ -1,0 +1,4 @@
+Toyota,Yaris,2500,50
+Suzuki,Celerio,2000,9
+Mazda,X5,5000,10
+Ferrari,Murcielago,10000,15

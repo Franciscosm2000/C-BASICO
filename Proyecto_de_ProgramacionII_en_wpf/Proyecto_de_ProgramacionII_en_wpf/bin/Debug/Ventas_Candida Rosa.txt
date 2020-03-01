@@ -1,0 +1,2 @@
+FranciscoSM,Candida Rosa,Toyota Yaris,15,2500
+FranciscoSM,Candida Rosa,Suzuki Celerio,2,2000

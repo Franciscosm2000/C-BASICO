@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Proyecto_de_ProgramacionII_en_wpf.Registros_Eliminar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Proyecto_de_ProgramacionII_en_wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Grid Background="Brown" Width="800" Height="500">
+        <StackPanel Name="stk1" Width="700" Margin="51,69,49,161">
+            <ListView Name="Tabla_Registros" Width="700" Height="200" Margin="0,50,0,10">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Nombre" Width="200" DisplayMemberBinding="{Binding Path=Nombre}"/>
+                        <GridViewColumn Header="Apellido" Width="200" DisplayMemberBinding="{Binding Path=Apellido}"/>
+                        <GridViewColumn Header="Cedula" Width="200" DisplayMemberBinding="{Binding Path= Cedula1}"/>
+                        <GridViewColumn Header="Codigo" Width="100" DisplayMemberBinding="{Binding Path=Codigo}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+        <Label Content="Mostrando Todos Los Registros" HorizontalAlignment="Left" Margin="253,17,0,0" VerticalAlignment="Top" Width="314" FontFamily="Algerian" FontSize="18" FontStyle="Italic"/>
+        <Button Background="Transparent" HorizontalAlignment="Left" Margin="51,400,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.015,-0.567" Height="40" Click="Button_Click">
+            <DockPanel>
+                <Image Source="Imagenes/Actualizar.png" Width="119"/>
+            </DockPanel>
+        </Button>
+        <Button Background="Transparent" HorizontalAlignment="Left" Margin="631,400,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="Button_Click_1">
+            <DockPanel>
+                <Image Source="Imagenes/Eliminar.png" Width="119"/>
+            </DockPanel>
+        </Button>
+    </Grid>
+</UserControl>

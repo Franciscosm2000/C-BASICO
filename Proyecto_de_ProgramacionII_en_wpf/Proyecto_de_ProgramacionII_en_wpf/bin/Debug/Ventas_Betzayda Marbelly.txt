@@ -1,0 +1,3 @@
+Francisco,Betzayda Marbelly,Toyota Yaris,10,2500
+Francisco,Betzayda Marbelly,Mazda X5,5,5000
+fran,Betzayda Marbelly,Suzuki Celerio,1,2000

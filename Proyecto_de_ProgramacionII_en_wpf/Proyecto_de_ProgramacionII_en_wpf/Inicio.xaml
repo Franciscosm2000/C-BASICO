@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Proyecto_de_ProgramacionII_en_wpf.Inicio"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Proyecto_de_ProgramacionII_en_wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="700">
+    <Grid Background="#FF571010" Margin="0,0,0,-52">
+        <Label Content="Agencia De Vehiculos" FontFamily="Edwardian Script ITC" FontSize="72" Margin="76,68,33,564">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="50" Color="#FFA46A6A"/>
+            </Label.Effect>
+        </Label>
+        <Image HorizontalAlignment="Left" Height="262" Margin="76,281,0,0" VerticalAlignment="Top" Width="536" Source="Imagenes/vehiculos.png">
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="100" BlurRadius="1" Direction="350"/>
+            </Image.Effect>
+        </Image>
+    </Grid>
+</UserControl>

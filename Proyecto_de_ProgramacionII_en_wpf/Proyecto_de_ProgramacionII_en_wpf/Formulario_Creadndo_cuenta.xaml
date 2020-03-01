@@ -1,0 +1,38 @@
+﻿<Window x:Class="Proyecto_de_ProgramacionII_en_wpf.Formulario_Creadndo_cuenta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_de_ProgramacionII_en_wpf"
+        mc:Ignorable="d"
+        Title="Formulario_Creadndo_cuenta" Height="450" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Rectangle Width="500" Height="450" >
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF570A0A" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="Nombre(s) :" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="82" Height="33" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="Times New Roman"/>
+        <Label Content="Password :" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" Width="82" Height="33" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="Times New Roman"/>
+        <Label Content="Nombre de Usuario :" HorizontalAlignment="Left" Margin="10,188,0,0" VerticalAlignment="Top" Width="114" Height="33" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="Times New Roman"/>
+        <Label Content="Numero :" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Width="82" Height="33" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="Times New Roman"/>
+        <Label Content="Apellido(s) :" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="82" Height="33" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="Times New Roman" RenderTransformOrigin="0.488,2.212"/>
+        <TextBox Name="lblNombre" HorizontalAlignment="Left" Height="23" Margin="138,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+        <TextBox Name="lblN_usuario" HorizontalAlignment="Left" Height="23" Margin="138,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.942,0.478"/>
+        <TextBox Name="lblNumero" HorizontalAlignment="Left" Height="23" Margin="138,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name ="lblApellido" HorizontalAlignment="Left" Height="23" Margin="138,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+        <PasswordBox Name="lblClave" HorizontalAlignment="Left" Margin="138,242,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Crear Cuenta" HorizontalAlignment="Left" Margin="39,348,0,0" VerticalAlignment="Top" Width="111" FontFamily="Algerian" Background="#FF7C1818" BorderBrush="#FF916969" Click="Button_Click_1">
+            <Button.Effect>
+                <DropShadowEffect Color="#FF613333" BlurRadius="10" ShadowDepth="20"/>
+            </Button.Effect>
+        </Button>
+        <Button Click="Button_Click" Content="Cancelar" HorizontalAlignment="Left" Margin="335,348,0,0" VerticalAlignment="Top" Width="111" FontFamily="Algerian" Background="#FF7C1818" BorderBrush="#FF916969">
+            <Button.Effect>
+                <DropShadowEffect Color="#FF613333" BlurRadius="10" ShadowDepth="20"/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>

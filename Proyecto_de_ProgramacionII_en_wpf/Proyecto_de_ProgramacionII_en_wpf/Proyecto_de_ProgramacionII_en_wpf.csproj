@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FE68CEE-F65F-499A-9875-52D6B786640E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_de_ProgramacionII_en_wpf</RootNamespace>
+    <AssemblyName>Proyecto_de_ProgramacionII_en_wpf</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Agregando_Inventario.xaml.cs">
+      <DependentUpon>Agregando_Inventario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar_Inventario.xaml.cs">
+      <DependentUpon>Buscar_Inventario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Agregando_Inventario_.cs" />
+    <Compile Include="Clases\CargarVende_y_Vehi.cs" />
+    <Compile Include="Clases\Fichero_Inventario.cs" />
+    <Compile Include="Clases\Validar_Numeros.cs" />
+    <Compile Include="Clases\Ventas.cs" />
+    <Compile Include="Clases\Ventas_Echas.cs" />
+    <Compile Include="DatosUsu.xaml.cs">
+      <DependentUpon>DatosUsu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mostrar_Registros_Ventas.xaml.cs">
+      <DependentUpon>mostrar_Registros_Ventas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Realizar_Venta.xaml.cs">
+      <DependentUpon>Realizar_Venta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Registros_Eliminar.xaml.cs">
+      <DependentUpon>Registros_Eliminar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Eliminar_Inventario.xaml.cs">
+      <DependentUpon>Registro_Eliminar_Inventario.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Agregando_Inventario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Buscar_Empleado_Agregado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Buscar_Inventario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DatosUsu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Despues_de_Acceder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Empleados_Agregar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Formulario_Creadndo_cuenta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Inicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Buscar_Empleado_Agregado.xaml.cs">
+      <DependentUpon>Buscar_Empleado_Agregado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\agregando_trabajador.cs" />
+    <Compile Include="Clases\fichero.cs" />
+    <Compile Include="Despues_de_Acceder.xaml.cs">
+      <DependentUpon>Despues_de_Acceder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados_Agregar.xaml.cs">
+      <DependentUpon>Empleados_Agregar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Creadndo_cuenta.xaml.cs">
+      <DependentUpon>Formulario_Creadndo_cuenta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.xaml.cs">
+      <DependentUpon>Inicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="mostrar_Registros_Ventas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Realizar_Venta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registros_Eliminar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registro_Eliminar_Inventario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\vehiculos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Mostrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\usuario.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
